@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Card  from './component/cart'
 
 function App() {
   let [count, setCount] = useState(15)
@@ -13,10 +14,12 @@ function App() {
   }
   return (
    <>
+   
     <h1>Well- come To Website </h1>
     <h1>Counter Val: {count}</h1>
-    <button className='bg-gree' onClick={increCounter}>increCounter</button>
-    <button onClick={decreCounter}>decreCounter</button>
+    <button className='bg-green-400 rounded-xl  m-2' onClick={increCounter}>increCounter</button>
+    <button className="bg-green-400 rounded-xl" onClick={decreCounter}>decreCounter</button>
+    <Card username='Rushikesh'/>
    </>
   )
 }
